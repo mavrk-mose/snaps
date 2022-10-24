@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import BlurImage from './components/Image';
-import axios from "Axios";
+import axios from "axios";
 
 function App() {
   const [search, setSearch] = useState([]);
