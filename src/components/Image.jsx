@@ -5,10 +5,10 @@ function cn(...classes) {
   }
   
 
-function BlurImage({image}) {
+function BlurImage({image, title, aired, trailer}) {
     const [isLoading, setLoading] = useState(true);
   return (
-    <a href="#" className="group">
+    <a href={trailer} className="group">
       <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
             <img
             alt="Anime Image"
@@ -23,8 +23,8 @@ function BlurImage({image}) {
           onLoad={() => setLoading(false)}
           />
       </div>
-      <h3 className="mt-4 text-sm text-gray-700">ger</h3>
-      <p className="mt-1 text-lg font-medium text-gray-900">@leeerob</p>
+      <h3 className="mt-4 text-sm text-yellow-700">{title}</h3>
+      <p className="mt-1 text-lg font-small text-yellow-900">{aired}</p>
     </a>
   );
 }

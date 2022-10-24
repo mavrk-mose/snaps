@@ -13,7 +13,6 @@ function App() {
       prev = response.data.data
       return prev
     });
-    console.log(response.data.data)
   })
   }, []);
   return (
@@ -21,7 +20,7 @@ function App() {
       <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
           {topAnime.map((anime, index) => {
             return (
-              <BlurImage key={index} image={anime.images.webp.image_url}/>
+              <BlurImage key={index} trailer={anime.trailer.embed_url}image={anime.images.webp.image_url} title={anime.title} aired={anime.aired.string}/>
             )
           })}
         </div>
