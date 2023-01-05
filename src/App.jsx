@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 import BlurImage from './components/Image';
-import TV from './components/TV';
 import axios from "axios";
 
 function App() {
