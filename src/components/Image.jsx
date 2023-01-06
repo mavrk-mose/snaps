@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { StarRounded } from "@material-ui/icons";
 
 function cn(...classes) {
     return classes.filter(Boolean).join(' ');
@@ -24,11 +23,10 @@ function BlurImage({image, title, aired, score, trailer}) {
         </div>
           <h3 className="mt-4 text-sm text-yellow-700">{title}</h3>
         <div className="flex text-yellow-700">
-          <StarRounded/> {score}
+           {score}
         </div>
         <p className="mt-1 text-lg font-small text-yellow-900">{aired}</p>
     </a>
   );
 }
 export default BlurImage;
-
